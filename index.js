@@ -1642,7 +1642,7 @@ client.updatePresence(from, Presence.composing)
 if (!isUser) return reply(mess.only.daftarB)
 if (!isGroup) return reply(mess.only.group)
 teks = `Notificación dada por @${sender.split("@")[0]}\n*Mensaje : ${args.join(' ')}*`
-const groupN = await samu330.groupMetadata(from);
+const groupN = await client.groupMetadata(from);
 member = groupN['participants']
 jids = [];
 member.map(async adm => {
@@ -1662,7 +1662,7 @@ break
 					case 'reportar':
 if (args.length <= 1) return reply(`Ejemplo: ${prefix}reportar "Amm... disculpa, tengo un error en...."`)
 if (args.length >= 300) return client.sendMessage(from, '*El limite del reporte es de maximo 300 caracteres!*', MessageType.text, {quoted: ftoko})
-var numerorepo = sam.participant
+var numerorepo = client.participant
 reporte = `[REPORTE]\nDe: @${sender.split("@s.whatsapp.net")[0]}\n\n${q}`
 var options = { text: reporte, contextInfo: { mentionedJid: [sender] },}
 client.sendMessage('573146224366@s.whatsapp.net', options, MessageType.text, {quoted: floc})
