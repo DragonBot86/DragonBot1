@@ -584,7 +584,7 @@ if (budy.includes("https://m.facebook.com/")){
 				if (!packname) packname = 'XavyBot'; if (!author) author = 'Ochoa';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
-				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
+				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./s rc/stickers/${name}.exif`
 				const json = {	
 					"sticker-pack-name": packname,
 					"sticker-pack-publisher": author,
@@ -790,9 +790,9 @@ break
 	
 	case 'x':
                 client.updatePresence(from, Presence.composing) 
-                if (!isGroupAdmins) return reply(mess.only.Badmin)
-		if (!isUser) return reply(mess.only.daftarB)
                 if (!isGroup) return reply(mess.only.group)
+                if (!isGroupAdmins) return reply(mess.only.admin)
+                if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                 teks = body.slice(3)
                 group = await client.groupMetadata(from);
                 member = group['participants']
