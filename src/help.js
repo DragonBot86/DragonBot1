@@ -5,7 +5,7 @@ const help = (prefix) => {
 
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
-   ○ Creador: 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩ 
+   ○ Creador: Dragon⁩⁩ 
  
 
 ◉ 🍒*COMUNICADO*
