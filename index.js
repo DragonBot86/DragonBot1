@@ -324,20 +324,20 @@ async function starts() {
 					},
 				only: {
 					group: '[❗] Este comando es solo para grupos',
-					ownerG: '[❗] Este comando solo puede ser utilizado por un admins del grupo',
+					ownerG: '[❗] Este comando solo puede ser utilizado por un Jefe del grupo',
 					ownerB: '[❗] Este comando solo lo usa Dragón',
-					admin: '[❗] Este comando solo puede ser utilizado por administradores del grupo',
+					admin: '[❗] Este comando solo puede ser utilizado por los jefes del grupo',
 					Badmin: '[❗] Este comando solo se puede usar cuando el bot se convierte en administrador',
                                         pegatina: 'Calma crack estoy haciendo tu sticker 👏\n\nRecuerda los stickersgif son de 6 segundos\n\nBy Dragón',
 					attp: 'Calma crack estoy haciendo tu texto a sticker 👏\n\nEsto puede demorar unos minutos\n\nBy Dragón',
 					imgs: 'Euu flaco 🥴\n\n*Convirtiendo tu Sticker a Imagen 🔄\n\nBy Dragón',
 					mpcancion: 'Calmaoooo estoy procesando 😎\n\n*Convirtiendo de MP4 a MP3 🔄\n\nBy Dragón',
-					mpa: 'Euu flaco 🥴\n\n*Estoy descargando tu cancion 🔄\n\nAguarde un momento, por favor\n\nBy Dragón',
+					mpa: 'Euu flaco 🍒\n\n*Estoy descargando tu cancion 🔄\n\nAguarde un momento, por favor\n\nBy Dragón',
                                         mpv: 'Calma ✋🥸🤚\n\n*Estoy descargando tu video 🔄\n\nAguarde un momento, por favor\n\nBy Dragón',
-					insta: 'Calmao 😎\n\n*Estoy descargando tu post 🔄\n\nAguarde un momento, por favor\n\nBy Dragón',
+					insta: 'Calmao 🍒\n\n*Estoy descargando tu post 🔄\n\nAguarde un momento, por favor\n\nBy Dragón',
 					musica: 'Calmao pa estoy bucando tu canción 😎\n\nRecuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando !play no funciona utiliza el comando !play2*\n\nSi no envio tu musica checa que version tienes del bot con !version\n\nBy Dragón',
 					musica2: 'Calmao pa estoy bucando tu canción 😎\n\nRecuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando !play2 no funciona utiliza el comando !play*\n\nSi no envio tu musica checa que version tienes del bot con !version\n\nBy Dragón',
-					daftarB: `「NO ESTAS REGISTRADO」\n\n🍒REGISTRATE PVTA\n\nPara poder usarme escribe el siguiente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶`,
+					daftarB: `「NO ESTAS REGISTRADO」\n\n🍒REGISTRATE PVTA\n\nPara poder usarme escribe el siguiente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar Dragón`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -955,7 +955,7 @@ break
 		
                                        
 				
-			//ANTILINKS DE REDES SOCIALES FLACO ACEPTALO SOLO LO ESTAS EDITANDO REALMENTE OCHOA TE HIZO TODO ESTO	
+			//ANTILINKS DE REDES SOCIALES FLACO ACEPTALO SOLO LO ESTAS EDITANDO REALMENTE DRAGÓN TE HIZO TODO ESTO	
 				
 				case 'antiwa':
                                         if (!isGroup) return reply(mess.only.group)
@@ -1426,7 +1426,7 @@ break
 				
 				
 	        case 'play':   
-	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: !play Boc ayo te amo')
+	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: !play Kevin kaarl- colapso')
 		if (!isUser) return reply(mess.only.daftarB)
                 reply(mess.only.musica)
                 play = body.slice(5)
@@ -1460,7 +1460,7 @@ break
 		if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 		anu = await fetchJson(`https://api.zeks.me/api/ytmp4?apikey=${apikey}&url=${args[0]}`, {method: 'get'})
 		if (anu.error) return reply(anu.error.yt)
-		teks = `*⌜Video Encontrado ✅⌟*\n◉ *Título:* ${anu.result.title} \n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP4 ⚠*\n\n_*Servicio proveido por 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_`
+		teks = `*⌜Video Encontrado ✅⌟*\n◉ *Título:* ${anu.result.title} \n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP4 ⚠*\n\n_*Servicio proveido por Dragón`
 		lagu = await getBuffer(anu.result.thumbnail)
                 client.sendMessage(from, lagu, image, {quoted: mek, caption: teks})
 		buffer = await getBuffer(anu.result.url_video)
