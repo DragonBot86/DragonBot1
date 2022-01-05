@@ -9,7 +9,7 @@ const help = (prefix) => {
  
 
 ◉ 🍒*COMUNICADO*
-Cualquier duda, por favor comunícate pon el creador con el comando !creador
+Cualquier duda, por favor comunícate con el creador con el comando !creador
 
 ◉ *PARA USAR EL BOT*
 Registrate con el comando ${prefix}daftar y tu nombre
